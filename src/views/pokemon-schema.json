@@ -1,0 +1,57 @@
+{
+  "title": "Pokemon",
+  "grid": {
+    "template": [
+      ["name", "name", "thumbnail"],
+      ["email", "email", "thumbnail"],
+      ["age", "age", "."],
+      ["description", ".", "."]
+    ],
+    "columns": "1fr auto",
+    "rows": "50px 50px 50px 50px"
+  },
+  "fields": [
+    {
+      "name": "name",
+      "label": "Name",
+      "type": "string",
+      "validation": {
+        "required": true,
+        "max": 100
+      }
+    },
+    {
+      "name": "email",
+      "label": "Email",
+      "type": "email",
+      "validation": {
+        "required": true
+      }
+    },
+    {
+      "name": "age",
+      "label": "Age",
+      "type": "integer",
+      "validation": {
+        "required": true,
+        "min": 0,
+        "max": 150
+      }
+    },
+    {
+      "name": "description",
+      "label": "Description",
+      "type": "textarea"
+    },
+    {
+      "name": "thumbnail",
+      "label": "Thumbnail",
+      "type": "string",
+      "validation": {
+        "required": true,
+        "min": 1,
+        "max": 30
+      }
+    }
+  ]
+}
